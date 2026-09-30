@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Production | DCC Online Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f3ef;
+      color: #242424;
+    }
+    .hero {
+      background: #1f2933;
+      color: white;
+      padding: 80px 24px 70px;
+      text-align: center;
+    }
+    .hero p {
+      max-width: 650px;
+      margin: 18px auto 0;
+      line-height: 1.7;
+      color: #d9dee3;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(42px, 7vw, 72px);
+      letter-spacing: -2px;
+    }
+    main {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 55px 24px 75px;
+    }
+    .intro {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 42px;
+      line-height: 1.7;
+    }
+    .sounds {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 6px 22px rgba(0,0,0,.08);
+    }
+    .number {
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #777;
+    }
+    h2 {
+      margin: 9px 0 18px;
+      font-size: 24px;
+    }
+    audio {
+      width: 100%;
+      margin-top: 8px;
+    }
+    .description {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+    footer {
+      text-align: center;
+      padding: 28px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Audio Production</h1>
+    <p>DCC Online Portfolio • Self-Produced Sound Effects</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p>
+        For this audio production project, I recorded everyday objects and turned
+        their sounds into simple sound effects. The collection includes an
+        electric toothbrush, a deodorant spray, and a Nespresso coffee machine.
+        Each recording can be played below.
+      </p>
+    </section>
+
+    <section class="sounds">
+      <article class="card">
+        <div class="number">Sound Effect 01</div>
+        <h2>Electric Toothbrush</h2>
+        <p class="description">
+          A self-recorded sound effect capturing an electric toothbrush in use.
+        </p>
+        <audio controls preload="metadata">
+          <source src="audio/electric-toothbrush.mp3" type="audio/mpeg">
+          Your browser does not support audio playback.
+        </audio>
+      </article>
+
+      <article class="card">
+        <div class="number">Sound Effect 02</div>
+        <h2>Deodorant Spray</h2>
+        <p class="description">
+          A self-recorded sound effect capturing the use of a deodorant spray.
+        </p>
+        <audio controls preload="metadata">
+          <source src="audio/deodorant-spray.mp3" type="audio/mpeg">
+          Your browser does not support audio playback.
+        </audio>
+      </article>
+
+      <article class="card">
+        <div class="number">Sound Effect 03</div>
+        <h2>Nespresso Coffee Machine</h2>
+        <p class="description">
+          A self-recorded sound effect capturing a Nespresso coffee machine
+          while making coffee.
+        </p>
+        <audio controls preload="metadata">
+          <source src="audio/nespresso-coffee-machine.mp3" type="audio/mpeg">
+          Your browser does not support audio playback.
+        </audio>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    DCC Online Portfolio • Audio Production
+  </footer>
+</body>
+</html>
